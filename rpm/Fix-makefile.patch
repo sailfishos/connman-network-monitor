@@ -1,0 +1,28 @@
+From a7ce9a345eb09c05d79887cc66b66e57c8e3071b Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Tomi=20Lepp=C3=A4nen?= <tomi.leppanen@jolla.com>
+Date: Tue, 11 Aug 2020 16:35:53 +0300
+Subject: [PATCH] Fix makefile
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Signed-off-by: Tomi Leppänen <tomi.leppanen@jolla.com>
+---
+ Makefile.am | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/Makefile.am b/Makefile.am
+index bdf72db..0e4b82e 100644
+--- a/Makefile.am
++++ b/Makefile.am
+@@ -16,6 +16,7 @@ endif # MAINTAINER_MODE
+ plugin_LTLIBRARIES = libconnman-network-monitor.la
+ plugin_objects = $(libconnman_network_monitor_la_OBJECTS)
+ libconnman_network_monitor_la_CFLAGS = $(plugin_cflags)
++libconnman_network_monitor_la_LDFLAGS = $(plugin_ldflags)
+ libconnman_network_monitor_la_LIBADD = $(DBUS_LIBS) $(GLIB_LIBS) $(GOBJECT_LIBS) $(GIO_LIBS)
+ libconnman_network_monitor_la_SOURCES = src/connman-network-monitor.c \
+ 					$(connman_sources)
+-- 
+2.26.2
+
