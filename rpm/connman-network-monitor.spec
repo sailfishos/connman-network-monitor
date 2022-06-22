@@ -3,6 +3,7 @@ Name: connman-network-monitor
 Version: 0.0.0
 Release: 1
 License: LGPLv2
+URL:     https://github.com/sailfishos/connman-network-monitor
 Source0: %{name}-%{version}.tar.bz2
 Patch0:  Fix-deprecation-errors-from-glib.patch
 Patch1:  Fix-makefile.patch
