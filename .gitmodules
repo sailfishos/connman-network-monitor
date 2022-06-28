@@ -1,3 +1,3 @@
 [submodule "upstream"]
 	path = upstream
-	url = https://github.com/jukkar/connman-network-monitor
+	url = https://github.com/sailfishos-mirror/connman-network-monitor.git
