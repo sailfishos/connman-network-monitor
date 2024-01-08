@@ -30,5 +30,7 @@ Requires:      connman
 %install
 %make_install
 
+find %{buildroot} -name \*.a -delete
+
 %files
 %{_libdir}/gio/modules/lib%{name}.so
